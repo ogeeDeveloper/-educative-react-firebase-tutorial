@@ -6,9 +6,9 @@ import FirebaseApp, {FirebaseContext} from './components/Firebase'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <FirebaseContext.Provider value={FirebaseApp}>
     <App />
-  </React.StrictMode>,
+  </FirebaseContext.Provider>,
   document.getElementById('root')
 );
 
